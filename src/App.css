@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+  background: url('/src/Asset/BGImage.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.header {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.restaurant-list, .menu, .order-tracking {
+  padding: 20px;
+}
+
+.card {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.view-menu-button {
+  margin-left: auto;
+}
+
+.navbar {
+  /* display : flex !important; 
+  justify-content: space-between !important; */
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+
+@media (min-width: 401px) {
+  .App {
+    display: none;
+  }
+  .desktop-message {
+    display: block;
+    text-align: center;
+    padding: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .desktop-message {
+    display: none;
+  }
+}
