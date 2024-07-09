@@ -55,10 +55,12 @@ function App() {
   return (
     <div className="App">
       <Navbar bg="transparent" expand="lg">
+      <Navbar.Brand>Food Ordering App</Navbar.Brand>
         <Nav className="mr-auto">
           {selectedRestaurant && (
             <Nav.Link onClick={handleBackToHome}>
-              Back to Home
+              <img src='https://cdn-icons-png.flaticon.com/512/2099/2099190.png' alt='back to home' height="30px" width="40px" />
+              {/* Back to Home */}
             </Nav.Link>
           )}
         </Nav>
@@ -68,9 +70,9 @@ function App() {
           </Nav.Link>
         </Nav>
       </Navbar>
-      <div className="header">
+      {/* <div className="header">
         <h1>Food Ordering</h1>
-      </div>
+      </div> */}
       {!selectedRestaurant ? (
         <RestaurantList onSelect={handleRestaurantSelect} />
       ) : !isOrderPlaced ? (

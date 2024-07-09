@@ -1,12 +1,14 @@
 .App {
   text-align: center;
-  background: url('/src/Asset/BGImage.jpg') no-repeat center center fixed;
+  /* background: url('/src/Asset/BGImage.jpg') no-repeat center center fixed; */
+  background-color: rgb(255, 255, 255);
   background-size: cover;
   min-height: 100vh;
+  color: rgb(0, 0, 0);
 }
 
 .header {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +21,10 @@
 
 .card {
   background-color: transparent !important;
-  border: none !important;
+  /* border: none !important; */
+  border-color: rgb(0, 0, 0) !important;
+  margin: 15px 0px;
+  color: rgb(0, 0, 0) !important;
 }
 
 .card-content {
@@ -38,8 +43,45 @@
   padding-right: 10px !important;
   padding-left: 10px !important;
 }
+/* Add this CSS to your App.css file */
 
-@media (min-width: 401px) {
+.menu-card {
+  margin-bottom: 15px;
+}
+.navbar-brand, .nav-link {
+  color: rgb(0, 0, 0) !important;
+  /* font-style: italic; */
+}
+.card-content {
+  display: flex;
+  align-items: center;
+}
+
+.card-content img {
+  margin-right: 15px;
+}
+
+.card-content .flex-grow-1 {
+  flex-grow: 1;
+}
+
+.card-content .text-right {
+  margin-left: auto;
+}
+/* .Item-btn-danger {
+  padding: 7px 12px !important;
+  margin-left: -1 !important;
+  font-size: 20px;
+  margin-top: 1px;
+}
+.Item-btn {
+  padding: 3px 6px !important;
+  font-size: 10px !important;
+  size: 5px;
+  
+} */
+
+@media (min-width: 450px) {
   .App {
     display: none;
   }
@@ -50,7 +92,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .desktop-message {
     display: none;
   }
